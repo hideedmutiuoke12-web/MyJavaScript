@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="shows"></p>
+    <script>
+        let day = new Date();
+        let result;
+        switch(day.getDay()) {
+            case 0:
+                result = "Mr Adewale";
+                break;
+             case 1:
+                result ="MR ADedoyin";
+                break;
+            case 2:
+                result ="Mrs Adedoyin";
+                break;
+             case 3:
+                result ="Mr oyelana";
+                break;
+             case 4:
+                result ="Mrs Ibidun Gloss";
+                break;
+             case 5:
+                result ="Mrs Egbin";
+                break;
+             case 6:
+                result ="Mrs titi";
+                break;
+            default:
+                result="invalid";
+        }
+        document.getElementById("shows").innerHTML=result;
+    </script>
+</body>
+</html>

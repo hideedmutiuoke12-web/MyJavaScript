@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment</title>
+</head>
+<body>
+   <button id="add">Add</button>
+   <p id="show"></p>
+   <p id="ade"></p>
+   <input type="text" id="mytext">
+   <button id="mybutton">boy</button>
+   <script>
+    const show = document.getElementById("show")
+    const Addbutton = document.getElementById("add")
+    let count = 0 
+    count++
+    Addbutton.addEventListener("click",()=>{
+    count++
+    
+        show.innerHTML = count
+        console.log(count)
+    })
+     var x = document.getElementById("ade")
+     x.innerHTML="terere"
+
+
+
+     const mytext= document.getElementById("mytext")
+     const mybutton = document.getElementById("mybutton")
+    mybutton.addEventListener("click",function(){
+        const vara = mytext.value;
+        console.log(vara);
+        show.innerHTML= vara
+    })
+   </script> 
+</body>
+</html>

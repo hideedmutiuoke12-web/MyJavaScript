@@ -1,0 +1,55 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+   background-color:black;
+}
+.Reach{
+   background-color:white;
+   display: flex;
+   /* gap:30px; */
+   justify-content: space-evenly;
+   padding-block: 10px;
+}
+.us{
+   display: flex;
+   gap:40px;
+}
+.loan{
+   display: flex;
+   gap:20px;
+}
+#check{
+   border: 1px solid;
+   padding: 3px;
+   border-radius: 10px;
+   padding-inline: 10px;
+}
+#eli{
+   background-color: black;
+   color: white;
+   padding: 3px;
+   border-radius: 10px;
+   padding-inline: 10px;
+}
+#for{
+   color: white;
+   text-align: center;
+   max-width: 30px;
+}
+#fors{
+   color: white;
+   max-width: 100px;
+   text-align: center;
+}
+.veen{
+   display: flex;
+   align-items: center;
+   padding-inline: 150px;
+   justify-content: space-between;
+   padding-top: 10px;
+}
+#teb{
+   color: white;
+}

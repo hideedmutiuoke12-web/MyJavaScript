@@ -1,0 +1,15 @@
+document.getElementById("one").onclick=function(){
+    document.getElementById("as").textContent="1";
+}
+document.getElementById("two").onclick=function(){
+    document.getElementById("sa").textContent="2";
+}
+document.getElementById("three").onclick=function(){
+    document.getElementById("sir").textContent="3";
+}
+document.getElementById("four").onclick=function(){
+    document.getElementById("ris").textContent="4";
+}
+document.getElementById("five").onclick=function(){
+    document.getElementById("pen").textContent="5";
+}

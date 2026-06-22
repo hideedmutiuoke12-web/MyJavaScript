@@ -1,0 +1,11 @@
+
+.calculator{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+input{
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+}

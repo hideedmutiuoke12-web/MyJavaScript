@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        :root{
+            --bg-color:green;
+
+        }
+        #green{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+        }
+        #gree{
+             background-color: green;
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+        }
+        #blue{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+        }
+        #blu{
+             background-color: blue;
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+        }
+        #red{
+             background-color: red;
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+        }
+        #re{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+        }
+        body{
+            background-color: white;
+        }
+        body.toggled{
+            background-color: var(--bg-color);
+        }
+         body.toggle{
+            background-color: blue;
+        }
+          body.toggl{
+            background-color: red;
+        }
+        h1.togg{
+            color: green;
+        }
+        h1.tog{
+            color: blue;
+        }
+        h1.to{
+            color: red;
+        }
+        #bod{
+             display:grid;
+            grid-template-columns: repeat(3,100px);
+            column-gap: 10px;
+        }
+    </style>
+</head>
+<body id="body">
+<div id="bod"> 
+    <div>
+        <div id="green"><P></P></div>
+        <div id="gree"></div>
+    </div>
+    <div>
+        <div id="blue"></div>
+        <div id="blu"></div>
+    </div>
+    <div>
+        <div id="red"></div>
+        <div id="re"></div>
+    </div>
+</div>
+    <h1 id="text">How are you</h1>
+    <script>
+        const green = document.getElementById("green");
+        const body = document.getElementById("body")
+        const blue = document.getElementById("blue");
+        const red = document.getElementById("red");
+        const text = document.getElementById("text");
+        green.addEventListener("click",()=>{
+            body.classList.toggle("toggled")
+        })
+        blue.addEventListener("click",function(){
+            body.classList.toggle("toggle")
+        })
+        red.addEventListener("click",function(){
+            body.classList.toggle("toggl")
+        })
+         gree.addEventListener("click",()=>{
+            text.classList.toggle("togg")
+        })
+         blu.addEventListener("click",()=>{
+            text.classList.toggle("tog")
+        })
+         re.addEventListener("click",()=>{
+            text.classList.toggle("to")
+        })
+    </script>
+</body>
+</html>

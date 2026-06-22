@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+    <style>
+        .boy{
+            grid-template-rows: repeat();
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="menu">
+    <button id="btn">Click</button>
+    <p id="shows"></p>
+    <script>
+        let menu = document.getElementById("menu");
+        let btn = document.getElementById("btn");
+        let age ="";
+        btn.addEventListener("click",function(){
+            age = menu.value;
+            age = Number(age);
+            let result = age    
+            let text="";
+
+            for(let i = 1; i<=result; i++)
+                text +=i+ "<br>";
+                document.getElementById("shows").innerHTML=text
+        })
+    </script>
+</body>
+</html>

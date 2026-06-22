@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --Color: black;
+            --bg-color: white;
+        }
+        body{
+            background-color: var(--bg-color);
+            color: var(--Color);
+        }
+        body.toggled{
+            background-color:var(--Color); 
+            color: var(--bg-color);
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>Toggle Button </h1>
+    <button id="btn">Toggle</button>
+    <button id="C-btn">click</button>
+    <script>
+        const Button = document.getElementById("btn")
+        const Clickbutton = document.getElementById("C-btn")
+        const Body = document.getElementById("body")
+        Button.addEventListener('click',()=>{
+           Body.classList.toggle('toggled') 
+        })
+        Button.addEventListener('click',()=>{
+           Clickbutton.innerHTML="clicked" 
+        })
+    </script>
+</body>
+</html>

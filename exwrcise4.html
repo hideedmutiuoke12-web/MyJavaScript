@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boy{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+        }
+    </style>
+    <div id="boy">
+        <input type="password" id="menu" placeholder="password"><br><br>
+        <p id="shows"></p>
+        <button id="mybutton">Submit</button>
+        <script>
+            let mybutton = document.getElementById("mybutton")
+            let shows = document.getElementById("shows")
+            let age;
+            mybutton.addEventListener("click",function(){
+            age = menu.value
+            if(age.length < 8){
+                shows.style.color="blue"
+                shows.innerHTML=" password must not be less than 8"
+            }
+            else{
+                shows.innerHTML="incorrect password"
+                shows.style.color="red"
+            }
+            })
+        </script>
+    </div>
+</body>
+</html>

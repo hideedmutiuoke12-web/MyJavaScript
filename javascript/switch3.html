@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <input type="number" id="menu">
+    <button id="mybutton">click</button>
+    <p id="shows"></p>
+    <p id="menus"></p>
+    <script>
+        let  mybutton = document.getElementById("mybutton").addEventListener('click', function(){
+            let menu = document.getElementById("menu").value;
+            let shows = document.getElementById("shows");
+            let menus = document.getElementById("menus")
+            switch (true) {
+                case (menu >= 70 && menu <= 100):
+                    shows.innerHTML = "A1";
+                    menus.innerHTML = "Execllent";
+                    break;
+                case (menu >= 65):
+                    shows.innerHTML = "B2";
+                      menus.innerHTML = "Very GOOD"
+                    break;
+                case (menu >= 60):
+                    shows.innerHTML = "B3";
+                      menus.innerHTML = "Good"
+                    break;
+                case (menu >= 55):
+                    shows.innerHTML = "C4";
+                      menus.innerHTML = "credit"
+                    break;
+                case (menu >= 50):
+                    shows.innerHTML = "C5";
+                      menus.innerHTML = "pass"
+                    break;
+                case (menu.value >= 46):
+                    shows.innerHTML = "C6";
+                      menus.innerHTML = "pass"
+                    break;
+                case (menu.value >= 40):
+                    shows.innerHTML = "D7";
+                    menus.innerHTML = "pass";
+                    break;
+                case (menu.value >= 35):
+                    shows.innerHTML = "E8";
+                    menus.innerHTML = "pass"
+                    break;
+                case (menu >= 30):
+                    shows.innerHTML = "F9";
+                       menus.innerHTML = "pass"
+                    break;
+                default:
+                    shows.innerHTML = "invalid score";
+            }
+        }); 
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini project</title>
+</head>
+<body>
+    <input type="number" id="menu">
+    <button id="mybutton">click</button>
+    <p id="shows"></p>
+    <script>
+        let menu = document.getElementById("menu");
+        let button = document.getElementById("mybutton");
+        let shows = document.getElementById("shows");
+        let age="";
+        button.addEventListener("click",function(){
+           age = menu.value;
+           age = Number(age);
+           let text = "";
+
+           for(let i = 1; i <= age; i++)
+           text += i + "<br>";
+           shows.innerHTML=text;
+        })
+    </script>
+</body>
+</html>

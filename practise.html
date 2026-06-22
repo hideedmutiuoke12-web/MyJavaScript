@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #body{  
+            background-color:black;
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+        }
+        body.toggled{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+   <div id="body"></div>
+   <button id="btn">click</button>
+   <script>
+    var body = document.getElementById("body");
+    var btn = document.getElementById("btn");
+    btn.addEventListener("click",()=>{
+        body.classList.add("toggled")
+    })
+   </script>
+<script>
+</script>
+</body>
+</html>

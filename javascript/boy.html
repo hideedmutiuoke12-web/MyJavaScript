@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color: white;
+        }
+        #girl{
+            background-color: red;
+        }
+        @media(max-width:600px){
+            #girl{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="bull">
+        <h2 id="two"></h2>
+        <div id="men">
+            <a href="" id="home"></a>
+            <a href="" id="contact"></a>
+            <a href="" id="about"></a>
+            <a href="" id="log in"></a>
+        </div>
+    </header>
+    <script src="dom.js"></script>
+    <div id="girl">
+        <p>gggg</p>
+    </div>
+    <script>
+       let x = document.getElementById("head")
+         x.style.display="flex"
+         x.style.alignItems="center"
+         x.style.justifyContent="space-between"
+         x.style.paddingInline="20px"
+    
+         var link = document.getElementById("link")
+         link.style.display="flex"
+         link.style.gap="30px"
+        let lnk = document.getElementById("link")
+        var menu = document.getElementById("menu")
+        menu.addEventListener('click', ()=>{
+            lnk.style.display = "block"
+         })
+    </script>
+    <!-- <button id="mes">Click me</button>
+    <p id="me"></p>
+    <p id="show"></p> -->
+    <!-- <script>
+        var x = document.getElementById("mes");
+        var y = document.getElementById("me").innerHTML="how are you"
+    </script> -->
+</body>
+</html>

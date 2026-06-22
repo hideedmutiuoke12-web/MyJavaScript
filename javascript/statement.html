@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="menu"33>
+    <button id="btn">Click</button>
+    <p id="shows"></p>
+    <script>
+        let btn = document.getElementById("btn");
+        let shows = document.getElementById("shows");
+        btn.addEventListener("click",function(){
+            let menu = Number(document.getElementById("menu").value)
+            let grade;
+            grade = menu;
+            if(grade >= 70){
+                shows.textContent="A1 Exellent"
+            }
+            else if(grade >= 60){
+                 shows.innerHTML="B2 Very Good"
+            }
+             else if(grade >= 50){
+                 shows.innerHTML="B3  Good";
+            }
+             else if(grade >= 45){
+                 shows.innerHTML="C4  Credit"
+            }
+             else if(grade >= 40){
+                 shows.innerHTML="C5 Credit"
+            }
+             else if(grade >= 35){
+                 shows.innerHTML="C6 Pass"
+            }
+             else if(grade >= 30){
+                 shows.innerHTML="D7 Pass"
+            }
+             else if(grade >= 25){
+                 shows.innerHTML="E8 Weak"
+            }
+            else{
+                shows.innerHTML="fail"
+            }
+        })
+    </script>
+</body>
+</html>

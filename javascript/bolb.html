@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #bulb{
+            border: 1px solid white;
+            width: 100px;
+            height: 100px;
+            border-radius: 400px;    
+        }
+        #leg{
+            border: 1px solid white;
+            width: 50px;
+            height: 80px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            justify-self: center; 
+        }
+        .parent{
+            width: 100px;
+            margin-top: 200px;
+        }
+        #btn{
+            margin-top: 10px;
+        }
+        #bulb{
+            position: relative;
+            top:20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <Div id="bulb"></Div>
+        <div id="leg"></div>
+    </div>
+    <button id="btn">click</button>
+    <script>
+        let btn = document.getElementById("btn");
+        let bulb = document.getElementById("bulb")
+        btn.addEventListener("click",function(){
+            if(bulb.style.backgroundColor==="black"){
+                 bulb.style.backgroundColor="white"
+                 bulb.style.boxShadow="10px 5px 15px white,-10px 5px 15px white "
+            }
+            else{
+                bulb.style.backgroundColor="black"
+                bulb.style.boxShadow="10px 5px black"
+            }
+        })
+    </script>
+</body>
+</html>

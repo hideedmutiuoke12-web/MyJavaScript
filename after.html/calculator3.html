@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .home{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <input type="text" id="menu">
+        <p>+</p>
+        <input type="text" id="value">
+        <p id="shows"></p>
+        <button onclick="addition()">Click</button>
+    </div>
+    <div class="home">
+        <input type="text" id="no">
+        <p>-</p>
+        <input type="text" id="al">
+        <p id="show"></p>
+        <button onclick="subtraction()">Click</button>
+    </div>
+    <div class="home">
+        <input type="text" id="men">
+        <p>*</p>
+        <input type="text" id="valu">
+        <p id="sho"></p>
+        <button onclick="multiplication()">Click</button>
+    </div>
+    <div class="home">
+        <input type="text" id="me">
+        <p>/</p>
+        <input type="text" id="va">
+        <p id="com"></p>
+        <button onclick="division()">Click</button>
+    </div>
+    <script>
+        function addition(){
+        var menu = document.getElementById("menu").value;
+        var input_1 = document.getElementById("value").value;
+        var shows = document.getElementById("shows");
+           var answer = Number(menu)+ Number(input_1);
+           shows.innerText = answer;
+        }
+         function subtraction(){
+        var menu = document.getElementById("no").value;
+        var input_1 = document.getElementById("al").value;
+        var show = document.getElementById("show");
+        var answer = Number(menu)-Number(input_1);
+        show.innerText = answer;
+        }
+         function multiplication(){
+        var menu = document.getElementById("men").value;
+        var input_1 = document.getElementById("valu").value;
+        var sho = document.getElementById("sho");
+           var answer = Number(menu) * Number(input_1);
+           sho.innerText = answer;
+        }
+         function division(){
+        var menu = document.getElementById("me").value;
+        var input_1 = document.getElementById("va").value;
+        var com = document.getElementById("com");
+           var answer = Number(menu)/ Number(input_1);
+           com.innerText = answer;
+        }
+    </script>
+</body>
+</html>

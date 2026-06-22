@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>practise</title>
+</head>
+<body>
+    <p id="text">text</p>
+    <div id="myid">
+        <p>text</p>
+        <p id="man"></p>
+    </div>
+    <button id="mybutton">add</button>
+    <script>
+        //let any = {
+            //name:"ade",
+            //age:15,
+            //how:false  
+        //};
+       // let anything = ["apple","banna"]
+                // console.log(any)
+        //console.log(typeof anything)
+        // let x = 5
+        // x = "how"
+        // console.log(x)
+        // var x = document.getElementById("text").innerHTML="hoaw"
+        // x.style.color="red"
+        let div = document.getElementById("myid");
+        var button = document.getElementById("mybutton")
+        button.addEventListener("click",function(){
+        let newelement = document.createElement("p")
+        newelement.innerHTML="ade"
+        div.appendChild(newelement)
+    })
+    </script>
+</body>
+</html>

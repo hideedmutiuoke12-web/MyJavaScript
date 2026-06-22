@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <input type="text"  id="mytext">
+    <p id="show"></p>
+    <button id="mybutton">press </button>
+</head>
+<body>
+<script>
+// If Statement = if a condition is true,execute some code 
+//                if not,do something else
+// let age =  43;
+
+// if(age >= 25){
+//         console.log("you are old enough to enter this site")
+// }
+// else{
+//     console.log("you are not old enough to enter this site")
+// }
+//let time = 19;
+
+// if(time <= 9){
+//       console.log("good morning")
+// }
+// else{
+//     console.log("good afternoon")
+// }
+// let isstudent = true;
+// if(isstudent){
+//    console.log("you are student")
+// }
+// else{
+//     console.log("you are not a student")
+// }
+// let age = 18;
+// let license = false;
+// if(age >= 18){
+//     console.log("you can drive")
+//     if(license){
+//         console.log("you have license")
+//     }
+//     else{
+//         console.log("you do not have license")
+//     }
+// }
+// else{
+//     console.log("you can not drive")
+// }
+
+const mytext=document.getElementById("mytext");
+const mybutton=document.getElementById("mybutton");
+const show = document.getElementById("show");
+let age;
+
+mybutton.addEventListener("click",function(){
+    age = mytext.value;
+    age = Number(age)
+     
+if(age >= 18){
+    show.textContent="you are adult"
+    if(exam){
+        show.textContent="you can sit for weac"
+   }
+   else{
+    show.textContent="you can not sit for the exam"
+   }
+}
+  else if(age == 0){
+    show.textContent="you are just born"
+  }
+else{
+    show.textContent="you are a teenager"
+}
+})
+</script>  
+</body>
+</html>

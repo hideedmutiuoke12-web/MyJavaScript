@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div{
+            background-color: antiquewhite;
+            width: 350px;
+            border-radius: 10px;
+            justify-self: center;
+            cursor: pointer;
+            padding-inline: 20px;
+            position: relative;
+        }
+        .hell{
+            /* content: ""; */
+            width: 0;
+            background-color: black;
+            position: absolute;
+            height: 5px;
+            bottom: 0;
+            left: 0;
+            transition: width 200ms;
+        }
+        #div:hover .hell{
+           width: 100%;     
+        }
+        </style>
+</head>
+<body>
+    <p>hello</p>
+    <div id="div">
+        <p>my name is hidded</p>
+        <p>I am a senior frontend developer</p>
+        <div class="hell"></div>
+    </div>
+</body>
+</html>

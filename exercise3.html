@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .alpa{
+            background-color: black;
+            color: white;
+            width: 300px;
+            height: 500px;
+            padding-left: 20px;
+            padding-top: 20px;
+            line-height: 50px;
+        }
+        body{
+            display: flex;
+        }
+        .col{
+            background-color: aqua;
+            height: 520px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="alpa">
+            <h2 id="h2">Alphabet</h2>
+            <h2 id="num">Number</h2>
+            <h2 id="stu">Student Names</h2>
+    </div>
+    <div class="col">
+     <p id="shows">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+    </div>
+    <script>
+        let h2 = document.getElementById("h2");
+        let num = document.getElementById("num");
+        let shows = document.getElementById("shows");
+        h2.addEventListener("click",function(){
+          shows.innerHTML="a b c d e f g h i j k l m n o p q r s t u v w x y z";
+        })
+        num.addEventListener("click",function(){
+            shows.innerHTML="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23";
+        })
+          stu.addEventListener("click",function(){
+            shows.innerHTML="ade  4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23";
+        })
+    </script>
+</body>
+</html>

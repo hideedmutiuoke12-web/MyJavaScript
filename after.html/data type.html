@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea  id="menu"readonly></textarea><br>
+    <button  onclick="calculate('6')">6</button>
+</body>
+    <script>
+        function calculate(value){
+            const menu = document.getElementById("menu")
+            menu.value += value;
+            // if (menu.value == '6') {
+            //     return console.log(menu.value);
+            // }
+        }
+    </script>
+</html>

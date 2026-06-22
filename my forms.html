@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <style>
+        body{
+            background-color: green;
+        }
+        #background{
+            background-color:white;
+            margin: auto;
+            width: 300px;
+            margin: auto;
+            margin-top: 200px;
+            padding-block: 20px;
+            text-align: center;
+
+        }
+        #submit{
+            background-color: white;
+        }
+        ::placeholder{
+            background-color:white
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="background">
+        <input type="text" placeholder="Firstname" id="first"><br><br>
+        <input type="text" placeholder="Lastname"><br><br>
+        <input type="text" placeholder="email" id="email"><br><br>
+        <p id="shows"></p>
+        <input type="submit" id="submit" onclick="btn()">
+    </form>  
+    <script>
+    function btn(){
+         var email = document.getElementById("email").value;
+         var shows = document.getElementById("shows").innerHTML;
+         if(email.include("@")){
+            shows="correct password"
+         }
+         else{2
+            shows="incorrect password"
+         }
+    }
+    </script>
+</body>
+</html>

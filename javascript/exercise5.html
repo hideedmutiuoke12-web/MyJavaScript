@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .back{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            margin: auto;
+            padding-top: 30px;
+        }
+        #menu{
+            margin-left: 40px;
+        }
+        #enu{
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+        #mybutton{
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+        .show{
+            display: block;
+            margin-left: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <div class="back">
+    <input type="password " id="menu">
+    <input type="password"id="enu">
+    <p id="shows"></p>
+    <button id="mybutton">Submit</button>
+   </div> 
+   <script>
+    let menu = document.getElementById("menu");
+    let enu = document.getElementById("enu");
+    let mybutton = document.getElementById("mybutton");
+    let shows =document.getElementById("shows");
+    let age;
+    let girl;
+    mybutton.addEventListener("click", function(){
+       age = menu.value;
+       girl=enu.value;
+
+       if(age !== girl){
+        shows.classList.add("show");a
+        shows.innerHTML="incorect";
+        shows.style.color="blue"
+       }
+       else if(age.length < 8){
+           shows.innerHTML="password must be less than 8"
+        }
+       else{
+        shows.style.display="block";
+        shows.innerHTML="correct"
+        shows.style.marginLeft="30px"
+        shows.style.color="red"
+       }
+       
+    })
+   </script>
+</body>
+</html>

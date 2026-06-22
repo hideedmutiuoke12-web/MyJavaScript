@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <input type="number" id="option">
+    <button id="btn">click</button>
+    <p id="shows"></p>
+    <!-- <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click",function(){
+        let option = Number(document.getElementById("option").value);
+        let result;
+        switch(option){
+            case 1:
+                result = "your balance"
+                break;
+            case 2:
+                result ="Withdraw"
+                break;
+            case 3:
+                result = "Deposit selected"
+                break;    
+            default:
+                result="invalid"
+        }
+        document.getElementById("shows").innerHTML = result
+        })
+    </script> -->
+
+    <script>
+        let btn = document.getElementById("btn");
+        btn .addEventListener("click",function(){
+            let days = Number(document.getElementById("option").value)
+            let day;
+            switch(days){
+                case 1:
+                    day = "monday"
+                break;
+            }
+        document.getElementById("shows").innerHTML=day;
+        })
+</script>
+</body>
+</body>
+</html>

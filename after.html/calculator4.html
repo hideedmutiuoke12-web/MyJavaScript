@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background{
+            background-color: darkblue;
+            width: 205px;
+            margin: auto;
+            padding-inline:4px;
+            padding-block: 4px;
+            border-radius: 3px;
+            margin-top: 80px;
+        }
+        .bod{
+            display: grid;
+            grid-template-columns: repeat(4,50px);
+            column-gap: 2px;
+        }
+        #show{
+            background-color: darkblue;
+            width: 196px;
+            border-right-color: darkblue;
+            height: 60px;
+        }
+        #but{
+            background-color: black;
+            height: 50px;
+            color: white;
+        }
+        #buts{            
+            background-color: black;
+            height: 50px;
+            width: 102px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <input type="" id="show">
+        <div class="bod">
+            <button id="but" onclick="clearDisplay()">Ac</button>
+            <button id="but" onclick="deleteone()">De</button>
+            <button id="but" onclick="addtion('.')">.</button>
+            <button id="but" onclick="addtion('/')">/</button>
+            <button id="but" onclick="addtion('7')">7</button>
+            <button id="but" onclick="addtion('8')">8</button>
+            <button id="but" onclick="addtion('9')">9</button>
+            <button id="but" onclick="addtion('*')">*</button>
+            <button id="but" onclick="addtion('4')">4</button>
+            <button id="but" onclick="addtion('5')">5</button>
+            <button id="but" onclick="addtion('6')">6</button>
+            <button id="but" onclick="addtion('-')">-</button>
+            <button id="but" onclick="addtion('1')">1</button>
+            <button id="but" onclick="addtion('2')">2</button>
+            <button id="but" onclick="addtion('3')">3</button>
+            <button id="but" onclick="addtion('+')">+</button>
+            <button id="but" onclick="addtion('00')">00</button>
+            <button id="but" onclick="addtion('0')">0</button>
+            <button id="buts" onclick="Result()">=</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

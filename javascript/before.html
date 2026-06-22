@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 10px;
+            width: fit-content;
+            justify-self: center;
+            width: fit-content;
+            position: relative;
+        }
+        div::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            bottom: 0;
+            background-color: black;
+            left: 0;
+            transition: 200ms;
+        }
+        div:hover  ::after{
+           width: 0%;
+        }
+            </style>
+</head>
+<body>
+    <div>
+        <p>my name is hidded</p>
+        <p>I am a senior frontend developer </p>
+    </div>
+</body>
+</html>

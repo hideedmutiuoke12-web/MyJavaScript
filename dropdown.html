@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <style>
+        .ade{
+            position: absolute;
+            display: none;
+            background-color: green;
+            /* cursor: pointer; */
+            right:200px;
+        }
+        .list:hover .ade{
+            display: block;
+            cursor: pointer;
+        }
+        #menu{
+            display: none;
+        }
+        #menu:checked ~ .boye{
+            display: block;
+        }
+        .boye{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <p>list</p>
+       <div class="ade">
+            <ul>
+                <li>ade</li>
+                <li>moyin</li>
+            </ul>
+        </div>
+    </div>
+    <input type="checkbox" id="menu">
+    <label for="menu">
+      <p>list</p>
+    </label>
+    <div class="boye">
+        <p>Ade</p>
+        <p>Ade</p>
+        <p>Ade</p>
+        <p>Ade</p>
+    </div>
+</body>
+</html>

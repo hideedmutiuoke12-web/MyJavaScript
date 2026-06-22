@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="mytext">
+    <p id="shows"></p>
+    <button id="mybutton">CLICK</button>
+    <script>
+        // const mytext = document.getElementById("mytext");
+        // const shows = document.getElementById("shows")
+        // const mybutton = document.getElementById("mybutton")
+        // let age;
+        // mybutton.addEventListener("click",function(){
+        //     age = mytext.value;
+        //     age = Number(age)
+        //     if(age >= 18){
+        //         shows.textContent ="you are adult"
+        //     }
+        //     else{
+        //         shows.textContent ="you are teenager"
+        //     }
+        // })
+        
+        // let mybutton = document.getElementById("mybutton");
+        // let shows = document.getElementById("shows")
+        // let count = 0;
+        // mybutton.addEventListener("click",function(){
+        //     count++
+        //     shows.innerHTML=count;
+        //     console.log(count)
+        // })
+
+        let mytext= document.getElementById("mytext")
+        let mybutton=document.getElementById("mybutton");
+        mybutton.addEventListener("click",function(){
+            let text = mytext.value
+            console.log(text)
+        })
+</script>
+</body>
+</html>

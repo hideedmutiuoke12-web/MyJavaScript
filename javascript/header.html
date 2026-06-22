@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header js</title>
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding-inline: 50px;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        a:hover{
+            color:green;
+            cursor: pointer;
+        }
+        #link{
+            background-color: black;
+            padding-inline: 10px;
+            display: flex;
+            gap:10px;
+        }
+        #box{
+            border: 1px solid;
+            width: 30px;
+            height: 10px;
+            margin-bottom: 5px;
+            background-color: black;
+        }
+        #menu{
+            display: none;
+        }
+        @media(max-width:500px){
+           #menu{
+            display:block;
+           }
+           #link{
+            display: none;
+           }
+           /* a{
+            position: absolute;
+            right: 40px;
+            top:100px;
+            color: black;
+           } */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Logo</h2>
+        <div id="link">
+            <a href="" id="log">Home</a>
+            <a href="" id="log">About</a>
+            <a href="" id="log">Help</a>
+            <a href="" id="log">Log in</a>
+        </div>
+        <div id="menu">
+            <div id="box"></div>
+            <div id="box"></div>
+            <div id="box"></div>
+        </div>
+    </header>
+    <script>
+        var menu = document.getElementById("menu");
+        var link = document.getElementById("link")
+        var log = document.getElementById("log")
+        menu.onclick = function(){
+            if (link.style.display === "block"){
+             link.style.display = "none";
+            }
+            else{
+                link.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>
